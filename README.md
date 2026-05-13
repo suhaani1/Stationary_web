@@ -46,8 +46,7 @@ Sri Radha Vallab Agency is a modern MERN stack stationery e-commerce website dev
 ### Other Tools
 - Git & GitHub
 - Postman
-- Cloudinary (for image upload)
-- Render / Railway / Vercel Deployment
+- 
 
 ---
 
