@@ -1,0 +1,120 @@
+/* Collections.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.collections-page {
+  min-height: 100vh;
+  background: #f4f9ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero */
+.collections-hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #d9eeff, #f4f9ff);
+}
+
+.collections-hero p {
+  color: #0052ff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.collections-hero h1 {
+  font-size: 56px;
+  color: #002b7f;
+}
+
+.collections-hero span {
+  color: #5d6e95;
+  font-size: 18px;
+}
+
+/* Grid */
+.collections-section {
+  padding: 70px 6%;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.collection-card {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 10px 22px rgba(0,82,255,0.08);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.collection-card:hover {
+  transform: translateY(-8px);
+}
+
+.collection-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.collection-card h3 {
+  color: #002b7f;
+  margin-bottom: 10px;
+}
+
+.collection-card p {
+  color: #5d6e95;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.collection-card button {
+  background: #0052ff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.collection-card button:hover {
+  background: #003dbe;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .collections-hero h1 {
+    font-size: 38px;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .collections-hero h1 {
+    font-size: 30px;
+  }
+
+  .collections-section {
+    padding: 50px 20px;
+  }
+}

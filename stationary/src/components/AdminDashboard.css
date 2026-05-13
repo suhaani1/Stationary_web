@@ -1,0 +1,140 @@
+```
+
+---
+
+# AdminDashboard.css
+
+```css
+.admin-page {
+  min-height: 100vh;
+  background: #f4f9ff;
+  padding: 50px 6%;
+}
+
+.admin-page h1 {
+  font-size: 42px;
+  color: #002b7f;
+  margin-bottom: 35px;
+}
+
+/* FORM */
+
+.product-form {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: grid;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.product-form h2 {
+  color: #002b7f;
+}
+
+.product-form input,
+.product-form textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.product-form textarea {
+  height: 120px;
+}
+
+.product-form button {
+  background: #0052ff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product-form button:hover {
+  background: #003dbe;
+}
+
+/* PRODUCTS */
+
+.admin-products h2 {
+  color: #002b7f;
+  margin-bottom: 25px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.admin-card {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.admin-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.admin-card h3 {
+  margin: 15px 0 10px;
+  color: #002b7f;
+}
+
+.admin-card p {
+  color: #0052ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.edit-btn {
+  width: 100%;
+  margin-top: 14px;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .admin-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-page h1 {
+    font-size: 32px;
+  }
+}

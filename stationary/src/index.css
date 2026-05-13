@@ -1,0 +1,76 @@
+/* Smooth */
+
+* {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease;
+}
+
+/* DARK MODE */
+
+body.dark {
+
+  background: #0f172a;
+
+  color: white;
+}
+
+/* Navbar */
+
+body.dark .navbar {
+
+  background: #111827;
+}
+
+body.dark .navbar a {
+
+  color: white;
+}
+
+/* Cards */
+
+body.dark .card,
+body.dark .product-card,
+body.dark .admin-card,
+body.dark .wishlist-card,
+body.dark .cart-item,
+body.dark .summary-box,
+body.dark .order-card,
+body.dark .product-form {
+
+  background: #1e293b;
+
+  color: white;
+}
+
+/* Inputs */
+
+body.dark input,
+body.dark textarea {
+
+  background: #0f172a;
+
+  color: white;
+
+  border: 1px solid #334155;
+}
+
+/* Buttons */
+
+body.dark button {
+
+  opacity: 0.95;
+}
+
+/* Sections */
+
+body.dark .hero,
+body.dark .collections,
+body.dark .shop-page,
+body.dark .orders-page,
+body.dark .wishlist-page,
+body.dark .cart-page {
+
+  background: #0f172a;
+}
